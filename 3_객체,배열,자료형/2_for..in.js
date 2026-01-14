@@ -43,15 +43,15 @@ let minsoonScore = {
 };
 
 function passChecker(scoreObject) {
-  let totalScore = 0; // 1. 점수를 합칠 '바구니'를 먼저 만들기
+  let totalScore = 0; // 1. 점수를 합칠 바구니를 먼저 만들기
 
   // 2. 객체 안의 정보를 하나씩 꺼내오는 반복문 (for...in)
   for (let subject in scoreObject) {
-    // scoreObject[subject]를 하면 각 과목의 점수(Value)를 가져올 수 있죠?
+    // scoreObject[subject]를 하면 각 과목의 점수(Value)를 가져올 수 있다.
     totalScore = totalScore + scoreObject[subject]; 
   } 
 
-  // 3. 모든 점수를 다 더한 후에 합격인지 물어봐요.
+  // 3. 모든 점수를 다 더한 후에 합격인지 물어보기
   if (totalScore >= 60) {
     console.log('축하합니다! 합격입니다!');
   } else {
