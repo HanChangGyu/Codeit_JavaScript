@@ -14,4 +14,4 @@ for (i = 0; i < celsiusTemps.length; i++) {
   let F = ( C * 9 / 5 ) + 32;
   fahrenheitTemps.push(F); //  fahrenheitTemps[i] = (celsiusTemps[i] * 9 / 5) + 32;
 }
-console.log(fahrenheitTemps);
+console.log(fahrenheitTemps)
