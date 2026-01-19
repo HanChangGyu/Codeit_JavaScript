@@ -49,3 +49,36 @@ console.log(ages[ages.length - 1]);
 console.log(ages[3]);
 console.log(numbers[3]);
 console.log(numbers);
+
+console.log('');
+// splice 메소드 
+
+// 배열의 첫 요소를 삭제/ 나머지 요소가 앞으로 당겨짐: shift() 
+members.shift(); 
+// 배열의 마지막 요소를 삭제: pop()
+members.pop();
+// 배열의 첫 요소로 값 추가: unshift(value)
+members.unshift('code');
+// 배열의 마지막 요소로 값 추가: push(value)
+members.push('hi');
+
+
+// 예제 
+function range(start, count, step) {
+  let arr = [];
+
+  for (let i = 0; i < count; i++) {
+    arr.push(start + i * step)
+  }
+
+  return arr;
+}
+
+console.log(range(1, 10, 3));
+
+/**
+ * start와 count, step에 = 1, 10, 3을 받는다
+
+받은 값이 arr [] 배열로 들어가고
+반복문을 보면 count가 10이니까 10전인 9까지 반복되면서 0부터 늘어나는 코드다
+ */
